@@ -35,7 +35,7 @@ def get_quote(endpoint: str) -> RandomQuote | None:
         return None
 
 
-def main(endpoint: str) -> str | None:
+def main(endpoint: str) -> None:
     quote = get_quote(endpoint)
     if quote:
         print(quote.say())
